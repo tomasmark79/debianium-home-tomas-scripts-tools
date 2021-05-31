@@ -1,0 +1,13 @@
+#!/bin/bash
+	now=$(date +"%T")
+	echo $now
+nc -dknl -p 9 -u |
+ stdbuf -o0 xxd -c 6 -p |
+ stdbuf -o0 uniq |
+ stdbuf -o0 grep -v 'ffffffffffff' |
+ while read ; do
+	now=$(date +"%T")
+	echo $now
+	echo ${REPLY:0:2}:${REPLY:2:2}:${REPLY:4:2}:${REPLY:6:2}:${REPLY:8:2}:${REPLY:10:2};
+ done
+

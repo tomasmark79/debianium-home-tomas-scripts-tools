@@ -1,0 +1,14 @@
+#!/bin/bash
+now=$(date +"%T")
+ping -c1 10.40.13.1 > /dev/null
+# nefunguje podminka pokud je pouzito - nyni nepouzivat
+#ping -c1 10.40.13.1 |grep "received"
+if [ $? -eq 0 ]
+	then
+    	#echo "$now - Ok"
+    	exit 0
+	else
+    	echo “$now - Error”
+		sudo rmmod ax88179_178a
+		sudo insmod /lib/modules/5.10.17-v7l+/kernel/drivers/net/usb/ax88179_178a.ko
+fi

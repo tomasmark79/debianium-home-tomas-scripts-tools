@@ -3,7 +3,7 @@
 # Environmental FireWall Management for bash console
 # Specially for own RaspiWall device
 # by Tomas Mark 2021
-#
+# aaa
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
 cd $CURRPATH

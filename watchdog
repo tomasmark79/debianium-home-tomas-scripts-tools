@@ -1,3 +1,6 @@
+# Automatic controll of gateway availabelity
+# called from cron every one minute
+
 #!/bin/bash
 now=$(date +"%T")
 ping -c1 10.40.13.1 > /dev/null

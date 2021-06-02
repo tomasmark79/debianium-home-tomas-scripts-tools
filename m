@@ -15,6 +15,8 @@ select opt in editme gitme wolme watchdoglog authlog kernlog syslog messages cro
             break
             ;;
         gitme)
+			echo "Be care for private thinks!!!"
+			echo ""
 			echo $CURRPATH
 			cd $CURRPATH
 			git status

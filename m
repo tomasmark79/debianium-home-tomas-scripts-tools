@@ -23,7 +23,7 @@ select opt in editme gitme wolme watchdoglog authlog kernlog syslog messages cro
 			git status
 			git add .
 			git status
-			git commit -m "Commit from: " $hostname
+			git commit -m "Commit from: $HOSTNAME"
 			git push -u origin main
             break
             ;;

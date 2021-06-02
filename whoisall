@@ -1,19 +1,19 @@
 #!/bin/bash
 
-# vezmi ip ze sloupecku SRC=11 TRG=12
+# tak ip from collumn SRC=11 TRG=12
 
 ipsrc="$(grep -oE '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' <<< $(awk '{print $11}' "/var/log/iptables.log"))"
 
-# serad je do sloupecku
+# sort to column
 while IFS= read -r line
 do
 	iplist+=$line$'\n'
 done < <(printf '%s\n' "$ipsrc")
 
-# vyrad dupkikaty a setrid
+# delete duplicates and sort
 ipsorted="$(sort <<< $iplist |uniq -u)"
 
-# vypisuj informace do consolw a soubor logu z whois po jednom radku
+# echoing to user
 while IFS= read -r line2
 do
 	echo $line2,\

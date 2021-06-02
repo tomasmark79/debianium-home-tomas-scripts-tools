@@ -6,12 +6,22 @@
 #
 #
 PS3="Select operation: "
-
-select opt in editme wolme watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog quit; do
+CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+select opt in editme gitme wolme watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog quit; do
 
     case "$opt" in
         editme)
-            sudo nano -c ~/scripts/tools/m
+            sudo nano -c "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/m
+            break
+            ;;
+        gitme)
+			echo $CURRPATH
+			cd $CURRPATH
+			git status
+			git add .
+			git status
+			git commit -m "Automatic commit from gitme bash script ^^"
+			git push -u origin main
             break
             ;;
         wolme)

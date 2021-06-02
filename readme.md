@@ -25,8 +25,6 @@
 	
 	* PostFix ***Accessible***
 	
-	* 
-
 	* ISPConfig Application for Webhosting  Management ***InAccessible***
 
 	* NextCloud WebServer Application with all the benefits ***Accessible***

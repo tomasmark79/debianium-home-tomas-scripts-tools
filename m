@@ -7,10 +7,11 @@
 
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
+
 cd $CURRPATH
 git pull --dry-run | grep -q -v 'Already up-to-date.' && changed=1
-if [ "$changed" -eq 1]; then
-	break
+if [[ "$changed" -eq 1 ]]; then
+	exit 1
 #
 fi
 

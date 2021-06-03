@@ -8,7 +8,12 @@
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
 cd $CURRPATH
-git pull
+git pull --dry-run | grep -q -v 'Already up-to-date.' && changed=1
+if [ "$changed" -eq 1]; then
+	break
+#
+fi
+
 select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog quit; do
 
     case "$opt" in

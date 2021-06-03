@@ -8,11 +8,13 @@ CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
 
 cd $CURRPATH
-changed="0"
+changed="1"
 echo $changed
-git pull | grep -q -v 'Already up-to-date.' && changed="1"
+git pull | grep -q -v 'Already up-to-date.' && changed="0"
 echo $changed
-if [[ "$changed" -eq 0 ]]; then
+
+if [[ "$changed" -eq 1 ]]; then
+	echo $changed
 	exit 1
 #
 fi

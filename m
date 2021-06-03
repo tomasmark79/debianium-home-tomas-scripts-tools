@@ -4,7 +4,7 @@
 # Specially for own RaspiWall device
 # by Tomas Mark 2021
 # automatic git management
-
+###
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
 

@@ -4,14 +4,13 @@
 # by Tomas Mark 2021
 # automatic git management
 
-
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "
 
 cd $CURRPATH
-changed="1"
+changed="0"
 echo $changed
-git pull | grep -q -v 'Already up-to-date.' && changed="0"
+git pull | grep -q -v 'Already up to date.' && changed="1"
 echo $changed
 
 if [[ "$changed" -eq 1 ]]; then

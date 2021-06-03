@@ -1,3 +1,4 @@
+####################################################
 #!/bin/bash
 # Environmental FireWall Management for bash console
 # Specially for own RaspiWall device

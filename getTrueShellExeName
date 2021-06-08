@@ -1,0 +1,16 @@
+#!/bin/bash
+
+getTrueShellExeName() {
+  local trueExe nextTarget 2>/dev/null # ignore error in shells without `local`
+  # Determine the shell executable filename.
+  trueExe=$(ps -o comm= $$) || return 1
+  # Strip a leading "-", as added e.g. by OSX for login shells.
+  [ "${trueExe#-}" = "$trueExe" ] || trueExe=${trueExe#-}
+  # Determine full executable path.
+  [ "${trueExe#/}" != "$trueExe" ] || trueExe=$([ -n "$ZSH_VERSION" ] && which -p "$trueExe" || which "$trueExe")
+  # If the executable is a symlink, resolve it to its *ultimate*
+  # target. 
+  while nextTarget=$(readlink "$trueExe"); do trueExe=$nextTarget; done
+  # Output the executable name only.
+  printf '%s\n' "$(basename "$trueExe")"
+}

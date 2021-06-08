@@ -23,7 +23,7 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog wifiap quit; do
+select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog wifiap wifistatus quit; do
 
     case "$opt" in
         editme)
@@ -177,6 +177,10 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             ;;
 		wifiap)
 			sudo nano /etc/hostapd/hostapd.conf
+            break
+            ;;
+		wifistatus)
+			sudo systemctl status hostapd.service
             break
             ;;
         quit)

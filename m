@@ -4,6 +4,10 @@
 # by Tomas Mark 2021
 # automatic git management
 ####################################################
+# Support for
+# RaspiWall
+# Server1
+# Hyperium
 
 CURRPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 PS3="Select operation: "

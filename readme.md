@@ -9,7 +9,7 @@
 
 ### RaspBerry Pi4B 4GB RAM with Debian 10 Buster (1GBit/s FireWall)
 
-	* FireWall controller ***InAccessible***
+	* FireWall controller ***InAccessible*** (IPTables)
 
 	* Unifi network controller ***InAccessible***
 

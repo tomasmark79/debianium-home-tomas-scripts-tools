@@ -38,7 +38,7 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
 			git status
 			git add .
 			git status
-			git commit -m "Commit by: $HOSTNAME "
+			git commit -m "Commit by device: $HOSTNAME "
 			git push -u origin main
             break
             ;;

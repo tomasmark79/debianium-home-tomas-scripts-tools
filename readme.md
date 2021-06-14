@@ -24,13 +24,16 @@
 ### HyperiumCA
 #### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
 
-	* rsa certificates signing ***InAccessible***offline
+	* rsa certificates signing for OpenVPN clients ***offline***
 
 ### Server1
 #### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
 	
 	* PostFix ***Accessible***
 	
+	* NextCloud WebServer Application with all the benefits ***Accessible***
+
 	* ISPConfig Application for Webhosting  Management ***InAccessible***
 
-	* NextCloud WebServer Application with all the benefits ***Accessible***
+		*	https://nenosto.debianium.com
+

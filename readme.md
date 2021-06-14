@@ -6,7 +6,7 @@
 ## Network Devices
 
 ### RaspiWall
-#### RaspBerry Pi4B 4GB RAM with Debian 10 Buster
+#### RaspBerry Pi4-4GB hosted Debian 10 Buster
 
 	* Network ISP gateway (1GBit/s) ***InAccesible***
 
@@ -16,13 +16,13 @@
 
 	* Network monitor ***InAccesible***
 
-## Hyperium
-### Hyper-V Debian 10 Buster with OpenVPN (remote access)
+### Hyperium
+#### Hypervizor Hyper-V hosted Debian 10 Buster 
 
 	* OpenVPN Server ***Accessible***
 
-## Server1
-### Hyper-V Debian 10 Buster with ISPConfig (webhosting)
+### Server1
+#### Hypervizor Hyper-V hosted Debian 10 Buster 
 	
 	* PostFix ***Accessible***
 	

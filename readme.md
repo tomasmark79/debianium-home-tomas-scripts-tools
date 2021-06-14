@@ -1,21 +1,15 @@
-
-# Debianium
-
-## The Solution for comprehensive IT Office Environment
-
 ## Welcome to my github.
 
-> All the resources that will appear here in the future are part of tools of my Environmental IT Office Solution.
+> All the resources that will appear here in the future are source code parts of my own SmartHome IT Environment named Debianium.
 
 ## RaspiWall
-### RaspBerry Pi4B 4GB RAM with Debian 10 Buster (1GBit/s FireWall)
+### RaspBerry Pi4B 4GB RAM with Debian 10 Buster
 
+	* Network ISP gateway (1GBit/s) ***InAccesible***
 
 	* FireWall controller ***InAccessible*** (IPTables)
 
 	* Unifi network controller ***InAccessible***
-
-	* Network ISP gateway ***InAccesible***
 
 	* Network monitor ***InAccesible***
 

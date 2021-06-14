@@ -34,8 +34,8 @@
 	* NextCloud WebServer Application with all the benefits ***Accessible***
 
 	* ISPConfig Application for Webhosting  Management ***InAccessible***
-		*	[fortune.debianium.com](https://fortune.debianium.com)
-		*	fortunka.debianium.com <https://fortunka.debianium.com> (Czech version)
-		*	cloud.debianium.com <https://cloud.debianium.com>
-		*	nenosto.debianium.com <https://nenosto.debianium.com>
+		*	fortune.debianium.com
+		*	fortunka.debianium.com - Czech version
+		*	cloud.debianium.com
+		*	nenosto.debianium.com
 

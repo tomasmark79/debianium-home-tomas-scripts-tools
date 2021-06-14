@@ -17,12 +17,17 @@
 	* Network monitor ***InAccesible***
 
 ### Hyperium
-#### Hypervizor Hyper-V hosted Debian 10 Buster 
+#### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
 
 	* OpenVPN Server ***Accessible***
 
+### HyperiumCA
+#### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
+
+	* rsa certificates signing ***InAccessible***offline
+
 ### Server1
-#### Hypervizor Hyper-V hosted Debian 10 Buster 
+#### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
 	
 	* PostFix ***Accessible***
 	

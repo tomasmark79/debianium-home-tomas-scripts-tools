@@ -34,8 +34,12 @@
 	* NextCloud WebServer Application with all the benefits ***Accessible***
 
 	* ISPConfig Application for Webhosting  Management ***InAccessible***
+		( webs for example )
 		*	fortune.debianium.com
 		*	fortunka.debianium.com - Czech version
-		*	cloud.debianium.com
-		*	nenosto.debianium.com
 
+
+# For You
+
+It might be useful for you to look at the individual files that I considered appropriate to publish. The repository is gradually expanding with the necessary files and is used mainly for sharing these tools between individual servers that I manage in the SmartHome IT environment.
+The most interesting is probably the file *** m ***, which serves as a default script for all basic operations, which are often repeated.

@@ -83,9 +83,9 @@
 
 ### Server1
 * Services
-	* PostFix ***Accessible***
-	* NextCloud WebServer Application with all the benefits ***Accessible***
-	* ISPConfig Application for Webhosting  Management ***InAccessible***
+	* PostFix
+	* NextCloud WebServer Application with all the benefits
+	* ISPConfig Application for Webhosting  Management
 * Hardware
 ```
        _,met$$$$$gg.          @server1.debianium.com

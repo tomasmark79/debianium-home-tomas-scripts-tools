@@ -106,7 +106,3 @@
           `"Y$b._
               `"""
 ```
-	* PostFix
-	* NextCloud WebServer Application with all the benefits
-	* ISPConfig Application for Webhosting  Management
-

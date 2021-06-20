@@ -177,7 +177,8 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             break
             ;;
 		dog)
-            sudo /home/tomas/scripts/tools/./bcmstat.sh
+			sudo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/./bcmstat.sh
+            #sudo /home/tomas/scripts/tools/./bcmstat.sh
             break
             ;;
 		wifiap)

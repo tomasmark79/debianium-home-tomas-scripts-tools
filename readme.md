@@ -88,7 +88,7 @@
 	* ISPConfig Application for Webhosting  Management ***InAccessible***
 * Hardware
 ```
-       _,met$$$$$gg.          tomas@server1.debianium.com
+       _,met$$$$$gg.          @server1.debianium.com
     ,g$$$$$$$$$$$$$$$P.       ---------------------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0

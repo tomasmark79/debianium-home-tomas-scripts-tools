@@ -39,12 +39,12 @@
 	* OpenVPN Server
 * Hardware
 ```
-       _,met$$$$$gg.          tomas@hyperium.debianium.com
+       _,met$$$$$gg.          @hyperium.debianium.com
     ,g$$$$$$$$$$$$$$$P.       ----------------------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
 ',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-16-amd64
-`d$$'     ,$P"'   .    $$$    Uptime: 4 days, 12 hours, 4 mins
+`d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 1697 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
  $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0
@@ -62,12 +62,12 @@
 	* rsa certificates signing for OpenVPN clients
 * Hardware
 ```
-       _,met$$$$$gg.          tomas@HyperiumCA
+       _,met$$$$$gg.          @HyperiumCA
     ,g$$$$$$$$$$$$$$$P.       ----------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
 ',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-13-amd64
-`d$$'     ,$P"'   .    $$$    Uptime: 9 hours, 13 mins
+`d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 1763 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
  $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0
@@ -93,7 +93,7 @@
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
 ',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-16-amd64
-`d$$'     ,$P"'   .    $$$    Uptime: 10 days, 3 hours, 11 mins
+`d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 3468 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
  $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0

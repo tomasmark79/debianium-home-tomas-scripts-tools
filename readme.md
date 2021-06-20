@@ -71,7 +71,7 @@
  $$P      d$'     ,    $$P    Packages: 1763 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
  $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0
- Y$$.    `.`"Y$$$$P"'         CPU: AMD Ryzen 9 3900X 12- (12) @ 3.800GHz
+ Y$$.    `.`"Y$$$$P"'         CPU: AMD Ryzen 9 3900X 12- (2) @ 3.800GHz
  `$$b      "-.__              Memory: 287MiB / 920MiB
   `Y$$
    `Y$$.
@@ -110,7 +110,3 @@
 	* NextCloud WebServer Application with all the benefits
 	* ISPConfig Application for Webhosting  Management
 
-## For You
-
-It might be useful for you to look at the individual files that I considered appropriate to publish. The repository is gradually expanding with the necessary files and is used mainly for sharing these tools between individual servers that I manage in the SmartHome IT environment.
-The most interesting is probably the file *** m ***, which serves as a default script for all basic operations, which are often repeated.

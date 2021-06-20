@@ -6,8 +6,17 @@
 ## Network Devices
 
 ### RaspiWall
-#### RaspBerry Pi4-4GB hosted Debian 10 Buster
-
+```
+Board: 4 x ARMv7 cores available, ondemand governor (Pi4 Model B rev 1.2, BCM2838 SoC with 4GB RAM by Sony UK)
+Memory: 1023MB (split 947MB ARM, 76MB GPU) plus 100MB Swap
+HW Block: |   ARM   |  Core  |  H264  |    SDRAM    |
+Min Freq: |  600MHz | 250MHz |   0MHz |   3180MHz   |
+Max Freq: | 1500MHz | 500MHz | 500MHz |   3180MHz   |
+Voltages: |         0, 0.8875V        |  0, 1.2000V |
+   Other: temp_limit=85
+Firmware: May 27 2021 14:02:15, version 7d9a298cda813f747b51fe17e1e417e7bf5ca94d (clean) (release) (start)
+  Codecs: H264 MJPG PCM
+```
 	* Network ISP gateway (1GBit/s) ***InAccesible***
 
 	* FireWall controller ***InAccessible*** (IPTables)

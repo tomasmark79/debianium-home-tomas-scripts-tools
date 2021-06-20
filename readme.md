@@ -51,7 +51,7 @@
 
 ### Server1
 #### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
-'''
+```
        _,met$$$$$gg.          tomas@server1.debianium.com
     ,g$$$$$$$$$$$$$$$P.       ---------------------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
@@ -69,7 +69,8 @@
        `Y$$b.
           `"Y$b._
               `"""	
-'''
+```
+
 	* PostFix ***Accessible***
 	
 	* NextCloud WebServer Application with all the benefits ***Accessible***

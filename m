@@ -177,8 +177,7 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             break
             ;;
 		dog)
-			sudo "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/./bcmstat.sh
-            #sudo /home/tomas/scripts/tools/./bcmstat.sh
+			sudo $CURRPATH/./bcmstat.sh
             break
             ;;
 		wifiap)
@@ -202,7 +201,7 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             break
             ;;
 		readme)
-			sudo nano -c "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/readme.md
+			sudo nano -c $CURRPATH/readme.md
             break
             ;;
         quit)

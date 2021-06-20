@@ -4,10 +4,10 @@
 
 ### RaspiWall
 * Services
-#### Network ISP gateway (1GBit/s)
-#### FireWall controller (IPTables)
-#### Unifi network controller
-#### Network monitoring
+	* Network ISP gateway (1GBit/s)
+	* FireWall controller (IPTables)
+	* Unifi network controller
+	* Network monitoring
 * Hardware
 ```
   `.::///+:/-.        --///+//-:``    @raspiwall.debianium.com

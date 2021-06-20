@@ -7,15 +7,29 @@
 
 ### RaspiWall
 ```
-Board: 4 x ARMv7 cores available, ondemand governor (Pi4 Model B rev 1.2, BCM2838 SoC with 4GB RAM by Sony UK)
-Memory: 1023MB (split 947MB ARM, 76MB GPU) plus 100MB Swap
-HW Block: |   ARM   |  Core  |  H264  |    SDRAM    |
-Min Freq: |  600MHz | 250MHz |   0MHz |   3180MHz   |
-Max Freq: | 1500MHz | 500MHz | 500MHz |   3180MHz   |
-Voltages: |         0, 0.8875V        |  0, 1.2000V |
-   Other: temp_limit=85
-Firmware: May 27 2021 14:02:15, version 7d9a298cda813f747b51fe17e1e417e7bf5ca94d (clean) (release) (start)
-  Codecs: H264 MJPG PCM
+  `.::///+:/-.        --///+//-:``    @raspiwall.debianium.com
+ `+oooooooooooo:   `+oooooooooooo:    -----------------------------
+  /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 10 (buster) armv7l
+  `+ooooooo:-:oo-  +o+::/ooooooo:     Host: Raspberry Pi 4 Model B Rev 1.2
+   `:oooooooo+``    `.oooooooo+-      Kernel: 5.10.42-v7l-lutein79+
+     `:++ooo/.        :+ooo+/.`       
+        ...`  `.----.` ``..           Packages: 751 (dpkg)
+     .::::-``:::::::::.`-:::-`        Shell: bash 5.0.3
+    -:::-`   .:::::::-`  `-:::-       Terminal: /dev/pts/1
+   `::.  `.--.`  `` `.---.``.::`      CPU: BCM2711 (4) @ 1.500GHz
+       .::::::::`  -::::::::` `       Memory: 469MiB / 3837MiB
+ .::` .:::::::::- `::::::::::``::.
+-:::` ::::::::::.  ::::::::::.`:::-
+::::  -::::::::.   `-::::::::  ::::
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-`
 ```
 	* Network ISP gateway (1GBit/s) ***InAccesible***
 
@@ -37,7 +51,25 @@ Firmware: May 27 2021 14:02:15, version 7d9a298cda813f747b51fe17e1e417e7bf5ca94d
 
 ### Server1
 #### Hypervizor Hyper-V on MS Windows 10 Pro hosted ***Debian 10 Buster***
-	
+'''
+       _,met$$$$$gg.          tomas@server1.debianium.com
+    ,g$$$$$$$$$$$$$$$P.       ---------------------------
+  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
+ ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
+',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-16-amd64
+`d$$'     ,$P"'   .    $$$    Uptime: 10 days, 3 hours, 11 mins
+ $$P      d$'     ,    $$P    Packages: 3468 (dpkg)
+ $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
+ $$;      Y$b._   _,d$P'      Terminal: /dev/pts/0
+ Y$$.    `.`"Y$$$$P"'         CPU: AMD Ryzen 9 3900X 12- (4) @ 3.799GHz
+ `$$b      "-.__              Memory: 3838MiB / 7977MiB
+  `Y$$
+   `Y$$.
+     `$$b.
+       `Y$$b.
+          `"Y$b._
+              `"""	
+'''
 	* PostFix ***Accessible***
 	
 	* NextCloud WebServer Application with all the benefits ***Accessible***

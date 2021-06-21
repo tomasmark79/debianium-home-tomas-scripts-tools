@@ -85,6 +85,8 @@
 * Services
 	* PostFix
 	* NextCloud WebServer Application with all the benefits
+	* ElasticSearch fulltext search engine
+	* Tesseract OCR service
 	* ISPConfig Application for Webhosting  Management
 * Hardware
 ```

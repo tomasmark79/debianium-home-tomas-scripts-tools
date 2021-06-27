@@ -181,7 +181,7 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             break
             ;;
 		diskspace)
-			sudo du -shc /*
+			sudo du -shc /* | sort -rh
             break
             ;;
 		wifiap)

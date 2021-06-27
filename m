@@ -28,7 +28,7 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog readme quit; do
+select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bsshdstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog readme quit; do
 
     case "$opt" in
         editme)
@@ -178,6 +178,10 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
             ;;
 		dog)
 			sudo $CURRPATH/./bcmstat.sh
+            break
+            ;;
+		diskspace)
+			sudo du -shc /*
             break
             ;;
 		wifiap)

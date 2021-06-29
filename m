@@ -135,7 +135,11 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
 			break
 			;;
 		f2bstatus)
-            sudo fail2ban-client status sshd && sudo fail2ban-client status postfix && sudo fail2ban-client status dovecot && sudo fail2ban-client status pure-ftpd && sudo fail2ban-client status nextcloud
+            sudo fail2ban-client status sshd
+			sudo fail2ban-client status postfix
+			sudo fail2ban-client status dovecot
+			sudo fail2ban-client status pure-ftpd
+			sudo fail2ban-client status nextcloud
             break
             ;;
 		f2bunbanip)

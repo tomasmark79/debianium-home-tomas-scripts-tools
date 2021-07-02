@@ -43,7 +43,7 @@
     ,g$$$$$$$$$$$$$$$P.       ----------------------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
-',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-16-amd64
+',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-17-amd64
 `d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 1697 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
@@ -66,7 +66,7 @@
     ,g$$$$$$$$$$$$$$$P.       ----------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
-',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-13-amd64
+',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-17-amd64
 `d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 1763 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3
@@ -94,7 +94,7 @@
     ,g$$$$$$$$$$$$$$$P.       ---------------------------
   ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 10 (buster) x86_64
  ,$$P'              `$$$.     Host: Virtual Machine Hyper-V UEFI Release v4.0
-',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-16-amd64
+',$$P       ,ggs.     `$$b:   Kernel: 4.19.0-17-amd64
 `d$$'     ,$P"'   .    $$$
  $$P      d$'     ,    $$P    Packages: 3468 (dpkg)
  $$:      $$.   -    ,d$$'    Shell: bash 5.0.3

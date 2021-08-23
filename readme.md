@@ -2,7 +2,7 @@
 
 > SmartHome IT Environment
 
-### RaspiWall
+### RaspiWall - Happy Hour - 50 days of UpTime Tested
 * Services
 	* Network ISP gateway (1GBit/s)
 	* FireWall controller (IPTables)

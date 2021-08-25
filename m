@@ -28,7 +28,7 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog readme quit; do
+select opt in editme gitme wolme acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog readme quit; do
 
     case "$opt" in
         editme)
@@ -51,6 +51,10 @@ select opt in editme gitme wolme vortex-mount vortex-umount watchdoglog authlog 
 			wakeonlan -i 192.168.79.255 -p 9 04:D9:F5:D4:1F:44
             break
             ;;
+		acmelog)
+			sudo tail -f /var/log/ispconfig/acme.log
+			break
+			;;
         vortex-mount)
 			sudo mount.cifs //PC-VORTEX/Shared ~/pc-vortex -o credentials=/root/.smbcreden
             break

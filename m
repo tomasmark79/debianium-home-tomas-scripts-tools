@@ -28,7 +28,9 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog readme quit; do
+select opt in editme gitme wolme acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
+NCInstalledApps NCMaintON NCMaintOFF \
+readme quit; do
 
     case "$opt" in
         editme)
@@ -214,6 +216,18 @@ select opt in editme gitme wolme acmelog vortex-mount vortex-umount watchdoglog 
             ;;
 		elasticsearchlog)
 			sudo grc cat /var/log/elasticsearch/elasticsearch.log
+			break
+			;;
+		NCInstalledApps)
+			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
+			break
+			;;
+		NCMaintON)
+			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --on
+			break
+			;;
+		NCMaintOFF)
+			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
 			break
 			;;
 		readme)

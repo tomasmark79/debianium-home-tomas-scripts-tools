@@ -28,7 +28,7 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme netRestart acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
+select opt in editme gitme wolme RwNetRestart acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 NCInstalledApps NCMaintON NCMaintOFF \
 readme quit; do
 
@@ -57,7 +57,7 @@ readme quit; do
 			sudo tail -f /var/log/ispconfig/acme.log
 			break
 			;;
-		netRestart)
+		RwNetRestart)
 			sudo systemctl restart networking.service
 			sudo ifdown --force wan0 && sudo ifup wan0
 			ip a

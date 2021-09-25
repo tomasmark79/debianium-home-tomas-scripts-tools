@@ -30,6 +30,8 @@ fi
 # main menu
 select opt in editme gitme wolme RwNetRestart acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 NCInstalledApps NCMaintON NCMaintOFF \
+MusicBotDev MusicBotStart MusicBotEdit \
+TMusicBotDev TMusicBotStart TMusicBotEdit \
 readme quit; do
 
     case "$opt" in
@@ -236,6 +238,36 @@ readme quit; do
 			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
 			break
 			;;
+		MusicBotDev)
+			pkill screen
+			source ~/.venvs/discord/bin/activate
+			python3 /home/tomas/bot.py
+            break
+            ;;
+		MusicBotStart)
+			pkill screen
+			screen -dm bash -c 'source ~/.venvs/discord/bin/activate; python3 /home/tomas/bot.py'
+			screen -list
+            break
+            ;;
+		MusicBotEdit)
+			nano /home/tomas/bot.py
+            break
+            ;;
+		TMusicBotDev)
+			source ~/.venvs/tqwitch/bin/activate
+			python3 /home/tomas/bottwitch.py
+            break
+            ;;
+		TMusicBotStart)
+			screen -dm bash -c 'source ~/.venvs/twitch/bin/activate; python3 /home/tomas/bottwitch.py'
+			screen -list
+            break
+            ;;
+		TMusicBotEdit)
+			nano /home/tomas/bottwitch.py
+            break
+            ;;
 		readme)
 			sudo nano -c $CURRPATH/readme.md
             break

@@ -2,6 +2,8 @@
 
 > SmartHome IT Environment
 
+Debianium is the name of self Home IT Environment.
+
 ### RaspiWall - Happy Hour - 50 days of UpTime Tested
 * Services
 	* Network ISP gateway (1GBit/s)

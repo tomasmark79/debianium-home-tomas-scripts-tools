@@ -241,31 +241,31 @@ readme quit; do
 		MusicBotDev)
 			pkill screen
 			source ~/.venvs/discord/bin/activate
-			python3 /home/tomas/bot.py
+			python3 /home/tomas/bots/bot.py
             break
             ;;
 		MusicBotStart)
 			pkill screen
-			screen -dm bash -c 'source ~/.venvs/discord/bin/activate; python3 /home/tomas/bot.py'
+			screen -dm bash -c 'source ~/.venvs/discord/bin/activate; python3 /home/tomas/bots/bot.py'
 			screen -list
             break
             ;;
 		MusicBotEdit)
-			nano /home/tomas/bot.py
+			nano /home/tomas/bots/bot.py
             break
             ;;
 		TMusicBotDev)
-			source ~/.venvs/tqwitch/bin/activate
-			python3 /home/tomas/bottwitch.py
+			source ~/.venvs/twitch/bin/activate
+			python3 /home/tomas/bots/bottwitch.py
             break
             ;;
 		TMusicBotStart)
-			screen -dm bash -c 'source ~/.venvs/twitch/bin/activate; python3 /home/tomas/bottwitch.py'
+			screen -dm bash -c 'source ~/.venvs/twitch/bin/activate; python3 /home/tomas/bots/bottwitch.py'
 			screen -list
             break
             ;;
 		TMusicBotEdit)
-			nano /home/tomas/bottwitch.py
+			nano /home/tomas/bots/bottwitch.py
             break
             ;;
 		readme)

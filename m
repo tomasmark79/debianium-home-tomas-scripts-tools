@@ -30,6 +30,7 @@ fi
 # main menu
 select opt in editme gitme wolme RwNetRestart acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 DNSMasqEdit \
+cloud_rescanfiles \
 NCInstalledApps NCMaintON NCMaintOFF \
 MusicBotDev MusicBotStart MusicBotEdit \
 TMusicBotDev TMusicBotStart TMusicBotEdit \
@@ -229,6 +230,10 @@ readme quit; do
 			;;
 		DNSMasqEdit)
 			sudo nano /etc/dnsmasq.conf
+            break
+            ;;
+		cloud_rescanfiles)
+			sudo -u web1 php /var/www/clients/client1/web1/web/./occ files:scan --all
             break
             ;;
 		NCInstalledApps)

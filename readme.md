@@ -110,3 +110,30 @@ Debianium is the name of self Home IT Environment Service
           `"Y$b._
               `"""
 ```
+### AgentDVR
+* Services
+    * AgentDVR
+* Hardware
+  `.::///+:/-.        --///+//-:``    pi@raspberrypi
+ `+oooooooooooo:   `+oooooooooooo:    --------------
+  /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 11 (bullseye) armv7l
+  `+ooooooo:-:oo-  +o+::/ooooooo:     Host: Raspberry Pi 3 Model B Plus Rev 1.3
+   `:oooooooo+``    `.oooooooo+-      Kernel: 5.10.63-v7+
+     `:++ooo/.        :+ooo+/.`       Uptime: 10 hours, 43 mins
+        ...`  `.----.` ``..           Packages: 1343 (dpkg), 3 (snap)
+     .::::-``:::::::::.`-:::-`        Shell: bash 5.1.4
+    -:::-`   .:::::::-`  `-:::-       Resolution: 720x480
+   `::.  `.--.`  `` `.---.``.::`      Terminal: /dev/pts/0
+       .::::::::`  -::::::::` `       CPU: BCM2835 (4) @ 1.400GHz
+ .::` .:::::::::- `::::::::::``::.    Memory: 201MiB / 922MiB
+-:::` ::::::::::.  ::::::::::.`:::-
+::::  -::::::::.   `-::::::::  ::::
+-::-   .-:::-.``....``.-::-.   -::-
+ .. ``       .::::::::.     `..`..
+   -:::-`   -::::::::::`  .:::::`
+   :::::::` -::::::::::` :::::::.
+   .:::::::  -::::::::. ::::::::
+    `-:::::`   ..--.`   ::::::.
+      `...`  `...--..`  `...`
+            .::::::::::
+             `.-::::-` 

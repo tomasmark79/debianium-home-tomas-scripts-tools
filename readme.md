@@ -114,6 +114,7 @@ Debianium is the name of self Home IT Environment Service
 * Services
     * AgentDVR
 * Hardware
+```
   `.::///+:/-.        --///+//-:``    pi@raspberrypi
  `+oooooooooooo:   `+oooooooooooo:    --------------
   /oooo++//ooooo:  ooooo+//+ooooo.    OS: Raspbian GNU/Linux 11 (bullseye) armv7l
@@ -137,3 +138,4 @@ Debianium is the name of self Home IT Environment Service
       `...`  `...--..`  `...`
             .::::::::::
              `.-::::-` 
+```

@@ -248,19 +248,19 @@ readme quit; do
 			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
 			break
 			;;
-		MusicBotDev)
+		RoBoDev)
 			pkill screen
 			source ~/.venvs/discord/bin/activate
-			python3 /home/tomas/bots/bot.py
+			python3.10 /home/tomas/bots/bot.py
             break
             ;;
-		MusicBotStart)
+		RoBoStart)
 			pkill screen
-			screen -dm bash -c 'source ~/.venvs/discord/bin/activate; python3 /home/tomas/bots/bot.py'
+			screen -dm bash -c 'source ~/.venvs/discord/bin/activate; python3.10 /home/tomas/bots/bot.py'
 			screen -list
             break
             ;;
-		MusicBotEdit)
+		RoBoEdit)
 			nano /home/tomas/bots/bot.py
             break
             ;;

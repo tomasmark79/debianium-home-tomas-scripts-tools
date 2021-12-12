@@ -32,7 +32,7 @@ select opt in editme gitme wolme RwNetRestart acmelog vortex-mount vortex-umount
 DNSMasqEdit \
 cloud_rescanfiles \
 NCInstalledApps NCMaintON NCMaintOFF \
-MusicBotDev MusicBotStart MusicBotEdit \
+RoBoDev RoBoStart RoBoEdit \
 TMusicBotDev TMusicBotStart TMusicBotEdit \
 readme quit; do
 

@@ -33,7 +33,6 @@ DNSMasqEdit \
 cloud_rescanfiles \
 NCInstalledApps NCMaintON NCMaintOFF \
 RoBoDev RoBoStart RoBoEdit \
-TMusicBotDev TMusicBotStart TMusicBotEdit \
 readme quit; do
 
     case "$opt" in
@@ -264,20 +263,20 @@ readme quit; do
 			nano /home/tomas/bots/bot.py
             break
             ;;
-		TMusicBotDev)
-			source ~/.venvs/twitch/bin/activate
-			python3 /home/tomas/bots/bottwitch.py
-            break
-            ;;
-		TMusicBotStart)
-			screen -dm bash -c 'source ~/.venvs/twitch/bin/activate; python3 /home/tomas/bots/bottwitch.py'
-			screen -list
-            break
-            ;;
-		TMusicBotEdit)
-			nano /home/tomas/bots/bottwitch.py
-            break
-            ;;
+#		TMusicBotDev)
+#			source ~/.venvs/twitch/bin/activate
+#			python3 /home/tomas/bots/bottwitch.py
+#            break
+#            ;;
+#		TMusicBotStart)
+#			screen -dm bash -c 'source ~/.venvs/twitch/bin/activate; python3 /home/tomas/bots/bottwitch.py'
+#			screen -list
+#           break
+#            ;;
+#		TMusicBotEdit)
+#			nano /home/tomas/bots/bottwitch.py
+#            break
+#            ;;
 		readme)
 			sudo nano -c $CURRPATH/readme.md
             break

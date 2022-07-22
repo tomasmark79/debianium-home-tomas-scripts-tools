@@ -28,10 +28,16 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme RwNetRestart acmelog NCSamba-mount NCSamba-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
+select opt in editme gitme wolme RwNetRestart acmelog watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 DNSMasqEdit \
-cloud_rescanfiles \
-NCInstalledApps NCMaintON NCMaintOFF \
+NextCloud_WindowsConnect \
+NextCloud_WindowsDisconnect \
+NextCloud_RescanFiles \
+NextCloud_ShowInstalledApps \
+NextCloud_MaintananceON \
+NextCloud_MaintananceOFF \
+NextCloud_mountWebDav \
+NextCloud_umountWebDav \
 RoBoDev RoBoStart RoBoEdit \
 readme quit; do
 
@@ -66,14 +72,6 @@ readme quit; do
 			ip a
 			break
 			;;
-        NCSamba-mount)
-			sudo mount.cifs //PC-VORTEX/Shared ~/pc-vortex -o credentials=/root/.smbcreden
-            break
-            ;;
-        NCSamba-umount)
-			sudo umount ~/pc-vortex
-            break
-            ;;
         wollucia)
 			#tohle fungovat na WiFi nebude :-)
 			wakeonlan -i 192.168.79.255 -p 9 C0:38:96:34:E5:8F
@@ -169,14 +167,6 @@ readme quit; do
 			sudo fail2ban-client set sshd banip $ipaddr
             break
             ;;
-		mountNC)
-			sudo mount.davfs https://cloud.debianium.com/remote.php/dav/files/tomas /home/tomas/webdav/
-            break
-            ;;
-		umountNC)
-			sudo umount /home/tomas/webdav
-            break
-            ;;
 		unifiON)
 			sudo service mongodb start
 			sudo service unifi start
@@ -231,22 +221,40 @@ readme quit; do
 			sudo nano /etc/dnsmasq.conf
             break
             ;;
-		cloud_rescanfiles)
+        NextCloud_WindowsConnect)
+			sudo mount.cifs //PC-VORTEX/Shared ~/pc-vortex -o credentials=/root/.smbcreden
+            break
+            ;;
+        NextCloud_WindowsDisconnect)
+			sudo umount ~/pc-vortex
+            break
+            ;;
+		NextCloud_RescanFiles)
 			sudo -u web1 php /var/www/clients/client1/web1/web/./occ files:scan --all
             break
             ;;
-		NCInstalledApps)
+		NextCloud_ShowInstalledApps)
 			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
 			break
 			;;
-		NCMaintON)
+		NextCloud_MaintananceON)
 			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --on
 			break
 			;;
-		NCMaintOFF)
+		NextCloud_MaintananceOFF)
 			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
 			break
 			;;
+		NextCloud_mountWebDav)
+			sudo mount.davfs https://cloud.debianium.com/remote.php/dav/files/tomas /home/tomas/webdav/
+            break
+            ;;
+		NextCloud_umountWebDav)
+			sudo umount /home/tomas/webdav
+            break
+            ;;
+
+
 		RoBoDev)
 			pkill screen
 			source ~/.venvs/discord/bin/activate

@@ -28,7 +28,7 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme RwNetRestart acmelog vortex-mount vortex-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
+select opt in editme gitme wolme RwNetRestart acmelog NCSamba-mount NCSamba-umount watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip mountNC umountNC unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 DNSMasqEdit \
 cloud_rescanfiles \
 NCInstalledApps NCMaintON NCMaintOFF \
@@ -66,11 +66,11 @@ readme quit; do
 			ip a
 			break
 			;;
-        vortex-mount)
+        NCSamba-mount)
 			sudo mount.cifs //PC-VORTEX/Shared ~/pc-vortex -o credentials=/root/.smbcreden
             break
             ;;
-        vortex-umount)
+        NCSamba-umount)
 			sudo umount ~/pc-vortex
             break
             ;;

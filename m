@@ -34,11 +34,13 @@ NextCloud_WindowsConnect \
 NextCloud_WindowsDisconnect \
 NextCloud_RescanFiles \
 NextCloud_ShowInstalledApps \
+NextCloud_ScanAppData-repair-thumbnails \
 NextCloud_MaintananceON \
 NextCloud_MaintananceOFF \
 NextCloud_mountWebDav \
 NextCloud_umountWebDav \
 RoBoDev RoBoStart RoBoEdit \
+PrintPHPVersion \
 readme quit; do
 
     case "$opt" in
@@ -237,6 +239,10 @@ readme quit; do
 			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
 			break
 			;;
+		NextCloud_ScanAppData-repair-thumbnails)
+			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:scan-app-data
+			break
+			;;
 		NextCloud_MaintananceON)
 			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --on
 			break
@@ -285,6 +291,11 @@ readme quit; do
 #			nano /home/tomas/bots/bottwitch.py
 #            break
 #            ;;
+
+		PrintPHPVersion)
+			php -r "print phpinfo();" | grep ".ini"
+            break
+            ;;
 		readme)
 			sudo nano -c $CURRPATH/readme.md
             break

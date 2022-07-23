@@ -28,17 +28,24 @@ if [[ "$changed" -eq 1 ]]; then
 fi
 
 # main menu
-select opt in editme gitme wolme RwNetRestart acmelog watchdoglog authlog kernlog syslog messages cronlog unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
+select opt in editme gitme wolme \
+RwNetRestart \
+acmelog watchdoglog authlog kernlog syslog messages cronlog mail.info \
+unifilog iplog ipdos f2blog ipwatch ip6watch ipedit ip6edit iprestore ip6restore f2bjail f2bstatus f2bunbanip f2bbanip unifiON unifiOFF smartsda dog diskspace wifiap wifistatus OVPNStatus OVPNLog OVPNPool elasticGClog elasticsearchlog \
 DNSMasqEdit \
 NextCloud_WindowsConnect \
 NextCloud_WindowsDisconnect \
 NextCloud_RescanFiles \
 NextCloud_ShowInstalledApps \
+NextCloud_CleanUp \
 NextCloud_ScanAppData-repair-thumbnails \
+NextCloud_repair-include-expensive \
+NextCloud_preview-generate-all \
 NextCloud_MaintananceON \
 NextCloud_MaintananceOFF \
 NextCloud_mountWebDav \
 NextCloud_umountWebDav \
+NextCloud_config-edit \
 RoBoDev RoBoStart RoBoEdit \
 PrintPHPVersion \
 readme quit; do
@@ -101,6 +108,10 @@ readme quit; do
             ;;
 		cronlog)
             sudo grc tail -f -n 150 /var/log/cron.log
+            break
+            ;;
+		mail.info)
+            sudo grc tail -f -n 150 /var/log/mail.info
             break
             ;;
 		unifilog)
@@ -239,8 +250,21 @@ readme quit; do
 			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
 			break
 			;;
+		NextCloud_CleanUp)
+			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:cleanup
+			break
+			;;
+
 		NextCloud_ScanAppData-repair-thumbnails)
 			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:scan-app-data
+			break
+			;;
+		NextCloud_repair-include-expensive)
+			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:repair --include-expensive
+			break
+			;;
+		NextCloud_preview-generate-all)
+			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ preview:generate-all -vvv
 			break
 			;;
 		NextCloud_MaintananceON)
@@ -259,8 +283,10 @@ readme quit; do
 			sudo umount /home/tomas/webdav
             break
             ;;
-
-
+		NextCloud_config-edit)
+			sudo nano /var/www/cloud.debianium.com/web/config/config.php
+            break
+            ;;
 		RoBoDev)
 			pkill screen
 			source ~/.venvs/discord/bin/activate

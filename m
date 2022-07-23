@@ -48,6 +48,7 @@ NextCloud_umountWebDav \
 NextCloud_config-edit \
 RoBoDev RoBoStart RoBoEdit \
 PrintPHPVersion \
+BookStackUpdateAutomatically \
 readme quit; do
 
     case "$opt" in
@@ -320,6 +321,18 @@ readme quit; do
 
 		PrintPHPVersion)
 			php -r "print phpinfo();" | grep ".ini"
+            break
+            ;;
+		BookStackUpdateAutomatically)
+			# TODO must be processed full in SU console and now not work
+			sudo su
+			cd /var/www/nenosto.debianium.com/web/BookStack/
+			git pull origin release
+			/usr/bin/php7.4 /usr/bin/composer install --no-dev
+			php7.4 artisan migrate
+			php7.4 artisan cache:clear
+			php7.4 artisan config:clear
+			php7.4 artisan view:clear
             break
             ;;
 		readme)

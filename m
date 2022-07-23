@@ -244,36 +244,36 @@ readme quit; do
             break
             ;;
 		NextCloud_RescanFiles)
-			sudo -u web1 php /var/www/clients/client1/web1/web/./occ files:scan --all
+			sudo -u web1 php7.4 /var/www/clients/client1/web1/web/./occ files:scan --all
             break
             ;;
 		NextCloud_ShowInstalledApps)
-			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ app:list
 			break
 			;;
 		NextCloud_CleanUp)
-			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:cleanup
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:cleanup
 			break
 			;;
 
 		NextCloud_ScanAppData-repair-thumbnails)
-			sudo -u web1 php --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:scan-app-data
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/occ files:scan-app-data
 			break
 			;;
 		NextCloud_repair-include-expensive)
-			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:repair --include-expensive
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:repair --include-expensive
 			break
 			;;
 		NextCloud_preview-generate-all)
-			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ preview:generate-all -vvv
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/./occ preview:generate-all -vvv
 			break
 			;;
 		NextCloud_MaintananceON)
-			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --on
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --on
 			break
 			;;
 		NextCloud_MaintananceOFF)
-			sudo -u web1 php --define pac.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
+			sudo -u web1 php7.4 --define apc.enable_cli=1 /var/www/clients/client1/web1/web/./occ maintenance:mode --off
 			break
 			;;
 		NextCloud_mountWebDav)
